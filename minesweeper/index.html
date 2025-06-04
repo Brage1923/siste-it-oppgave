@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+        <h3 class="title">Minesweeper</h3>
+        <button id="pauseButton">Pause</button>
+    <div class="subtext">
+        <div class="controls">
+            <select id="difficulty">
+                <option value='easy'>lett</option>
+                <option value='medium'>middels</option>
+                <option value='hard'>vanskelig</option>
+            </select>
+        </div>
+        <div>
+        Flagg igjen: <span id="flagg">10</span>
+        </div>
+        <div>
+        Tid brukt: <span id="klokke">0</span> sek
+        </div>
+    </div>
+    <div class="board"></div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popupMessage"></p>
+            <p id="tid_brukt"></p>
+            <button id="tryAgainBtn"></button>
+        </div>
+        </div>
+</body>
+</html>

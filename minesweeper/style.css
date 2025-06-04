@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    color: white;
+}
+
+.title {
+    margin: 20px;
+}
+
+.subtext {
+    color: #CCC;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+.popup-content {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #45a049;
+}  
+
+.board {
+    display: inline-grid;
+    padding: 10px;
+    grid-template-columns: repeat(var(--size), 50px);
+    grid-template-rows: repeat(var(--size), 50px);
+    gap: 0px;
+    background-color: #777;
+}
+
+.board>* {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    user-select: none;
+}
+
+.board>[data-status="hidden"] {
+    background-color: #38ff3e;
+    cursor: pointer;
+}
+
+.board>[data-status="hidden"]:nth-of-type(even) {
+    background-color: #52bd3a;
+    cursor: pointer;
+}
+
+.board>[data-status="marked"] {
+   background-color: yellow;
+}
+
+.board>[data-status="mine"] {
+    background-image: url('bomb.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.board>[data-status="number"] {
+    background-color: none;
+}
+
+
+#difficulty {
+    color: #333;
+    scale: 140%;
+}

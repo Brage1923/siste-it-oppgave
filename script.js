@@ -6,28 +6,28 @@ const pages = [
         link: "",
     },
     {
-        title: "Game One",
-        text: "Et spennende eventyrspill!",
+        title: "Minesweeper",
+        text: "Spill det klassiske Minesweeper-spillet!",
         img: "https://via.placeholder.com/300x150",
-        link: "https://example.com/game1",
+        link: "minesweeper/index.html",
     },
     {
-        title: "Game Two",
+        title: "Dino Game",
         text: "Utfordre deg selv!",
         img: "https://via.placeholder.com/300x150",
-        link: "https://example.com/game2",
+        link: "dinogame/index.html",
     },
     {
-        title: "Game Three",
+        title: "",
         text: "Ha det gøy med vårt nyeste spill!",
-        img: "https://via.placeholder.com/300x150",
+        img: "bilder/minesweeperTest.png",
         link: "https://example.com/game3",
     },
     {
-        title: "Slutt",
-        text: "Takk for at du bladde gjennom Game Hub!",
+        title: "Ulniversal Paperclip",
+        text: "det ultimate nettspillet!",
         img: "",
-        link: "",
+        link: "ultimatepaperclip/index2.html",
     },
 ];
 
